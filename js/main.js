@@ -59,9 +59,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // Agregar el evento de clic al botón "Agregar 10 veces"
     btnAgregar10.addEventListener("click", agregarTexto10);
 
+    
+    
     //Boton "Agregar n veces"
     const btnAgregarN = document.getElementsByClassName("btn-agregar")[3];
-    
     function agregarTextoN() {
         const nVeces = prompt("¿Cuántas veces quieres agregar el contenido?");
         for (let i = 0; i < nVeces; i++) {
@@ -78,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
     function limpiarTexto() {
         destino.innerHTML = ""; // Limpia el contenido del div de destino
     }
-
     // Agregar el evento de clic al botón "Limpiar"
     btnLimpiar.addEventListener("click", limpiarTexto);
 
@@ -91,6 +91,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Agregar el evento de clic al botón "convertir en mayusculas" 
     btnMayusculas.addEventListener("click", convertirMayusculas);
 
+    
+    
     // Funcionalidad del boton "convertir en minusculas"
     const btnMinusculas = document.getElementsByTagName("button")[0];
     function convertirMinusculas() {
@@ -99,8 +101,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Agregar el evento de clic al botón "convertir en minusculas"
     btnMinusculas.addEventListener("click", convertirMinusculas);
 
+   
+   
     // Agregar "Ok" a todos los elementos li 
-
     const listaOk = "[Ok]";
 
     const lista = document.querySelectorAll("li");
